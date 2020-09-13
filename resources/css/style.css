@@ -1,0 +1,619 @@
+/* ================================= */
+/* BASIC SETUP */
+/* ================================= */
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4.2rem;
+}
+
+/* ================================= */
+/* Reusable Components */
+/* ================================= */
+
+.container{
+    max-width: 130rem;
+    margin: 0 auto;
+}
+section{
+    padding: 8.5rem 0;
+}
+.services-section{
+    padding: 10rem 0 !important;
+}
+h2 {
+	font-size: 4rem;
+	color: #fff;
+	letter-spacing: 0.4rem;
+	margin-top: 0;
+	font-weight: 600;
+	margin-bottom: 0;
+	text-align: center;
+}
+h2::after {
+	content: "";
+	display: block;
+	height: .4rem;
+	background: #14a58c;
+	width: 9rem;
+	margin: auto;
+	display: block;
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+h3 {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+/* Paragraph */
+.little-description {
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	width: 60rem;
+	margin: auto;
+	margin-bottom: 8rem;
+    margin-top: 2.5rem;
+    color: black;
+}
+.lettle-d {
+	font-size: 1.7rem;
+	line-height: 2.6rem;
+	margin-top: 0rem;
+	width: 20.5rem;
+	margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+/* Button */
+.btn {
+	background: #eb7d4b;
+	width: 29.7rem;
+	padding: 1.9rem 0rem;
+	color: white;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 6.2rem;
+	font-size: 1.8rem;
+	border-bottom: .5rem solid #c86a40;
+	border-radius: .4rem;
+	transition: .4s;
+}
+.clearfix::before{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ================================= */
+/* Header Section */
+/* ================================= */
+
+/* Sticky Bar */
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 50%;
+	width: 100%;
+	box-sizing: border-box;
+    background: rgba(135, 80, 156,.9);
+    z-index: 99999;
+}
+
+header{
+    background: linear-gradient(rgba(135, 80, 156,.9),rgba(135, 80, 156,.9)), url(img/hero-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding-bottom: 59.5rem;
+    position: relative;
+}
+.logo-title img{
+    margin-top: 5.7rem;
+}
+.top-menu ul {
+	margin-top: 5.7rem;
+}
+.top-menu ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+.top-menu ul li:first-child{
+    margin-left: 0;
+}
+.top-menu ul li a {
+	display: block;
+	font-size: 1.6rem;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: .5rem;
+    padding: 1rem 1.8rem;
+    transition: .4s;
+}
+.top-menu ul li a:hover{
+    background: #643a79;
+}
+.top-menu ul li.active{
+    background: #643a79;
+    border-radius: .5rem;
+}
+.sticky .logo-title img, .sticky ul {
+	margin-top: 0px;
+	margin-bottom: 0;
+	background: rgba(135,80,156,.8);
+	padding: 1rem;
+}
+.sticky .logo-title img {
+	background: rgba(135,80,156,.8);
+	left: 63rem;
+	padding-left: 60rem;
+	background: none;
+}
+.sticky ul {
+	position: relative;
+	right: 21rem;
+	padding: -2.1rem;
+	width: 100%;
+	padding-right: 34rem;
+	padding-left: 11rem;
+	background: none;
+}
+.sticky nav{
+    background: rgba(135,80,156,.8);
+    width: 100%;
+    z-index: 999999;
+}
+.middle-content{
+    text-align: center;
+    width: 90.6rem;
+    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.middle-content h1{
+    font-size: 4.2rem;
+    color: #fff;
+}
+.btn:hover{
+    background: #17C2A4;
+    border-bottom: .5rem solid rgb(7, 153, 127);
+}
+
+/* ================================= */
+/* Services Section */
+/* ================================= */
+
+.services-section{
+  background: linear-gradient(rgba(23, 194, 164,.9),rgba(23, 194, 164,.9)), url(img/services-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+    background-position: center top;
+}
+.box img{
+    height: 13.0;
+}
+.padding-big{
+    padding-top: 6rem;
+}
+
+/* ================================= */
+/* Team Section */
+/* ================================= */
+.team-section{
+    background: linear-gradient(rgba(231, 241, 248,.9),rgba(231, 241, 248,.9)),url(img/team-bg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.team-section h2 {
+	font-size: 4rem;
+	color: #3c4761;
+	letter-spacing: 0.4rem;
+	margin-top: 0;
+	font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+}
+.team-section h2::after {
+	content: "";
+	display: block;
+	height: .4rem;
+	background: #c8d9e5;
+	width: 9rem;
+	margin: auto;
+	display: block;
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+.team-section p.little-description {
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	width: 66.5rem;
+	margin: auto;
+	margin-bottom: 5.5rem;
+	margin-top: 2.5rem;
+	text-align: center;
+}
+.lettle-Pgh {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	margin-top: 0rem;
+	width: 20.5rem;
+	margin: 0 auto;
+    color: #000;
+    text-align: center;
+}
+.team-subt{
+    width: 18.4rem;
+    text-align: center;
+    margin: auto;
+    font-size: 1.6rem;
+    color: #21a1cc;
+    display: block;
+    margin-bottom: 2rem;
+}
+.team-section h3 {
+	font-size: 2.4rem;
+	margin-top: 3.3rem;
+	margin-bottom: .5rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	text-align: center;
+}
+.team-section img{
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    height: 19.2rem;
+    width: 19.2rem;
+}
+.social-menu ul {
+	margin: auto;
+	width: 22rem;
+	margin-top: 2rem;
+}
+.social-menu ul li{
+    display: inline-block;
+}
+.social-menu ul li a {
+	color: #fff;
+}
+.social-menu ul li a i::before {
+	background: #bdd1df;
+	width: 1.8rem;
+	height: 1.8rem;
+	font-size: 1.8rem;
+	padding: 1rem;
+	margin: 0 .4rem;
+	border-radius: 50%;
+	display: block;
+    text-align: center;
+    transition: all .3s ease;
+}
+.social-menu ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);
+}
+
+/* ================================= */
+/* Skill Section */
+/* ================================= */
+.skill-section{
+    background: linear-gradient(rgba(255, 255, 255,.9),rgba(255, 255, 255,.8)),url(img/skill-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center top;
+}
+.skill-section h2{
+    color: #3c4761;
+    margin: auto;
+}
+.skill-section h3 {
+	margin-top: 1.7rem;
+	margin-bottom: 0;
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+.skill-section p.little-description {
+	text-align: center;
+	margin: auto;
+	display: block;
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	margin-bottom: 5rem;
+	margin-top: 2.5rem;
+}
+.skill-section .box{
+    margin: auto;
+}
+svg.radial-progress circle {
+    stroke-width: 6; 
+}
+svg.radial-progress circle {
+     stroke: #a2ed56; 
+}
+svg.radial-progress.html circle {
+    stroke: #d74680; 
+}
+svg.radial-progress.graphic-design circle {
+    stroke: #15c7a8; 
+}
+svg.radial-progress.ul circle {
+    stroke: #eb7d4b; 
+}
+svg.radial-progress text{
+    fill: black;
+    font-size: 1.7rem;
+}
+
+/* ================================= */
+/* Portfolio Section */
+/* ================================= */
+
+.portfolio-section{
+    background: linear-gradient(rgba(255, 221, 153,.7),rgba(255, 221, 153,.9)),url(img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.portfolio-section .col:nth-child(3) {
+	margin-left: 0;
+}
+.portfolio-section h2{
+    color: #393939;
+}
+.portfolio-section h2::after{
+    background: #e5c37f;
+}
+.btn-portfolio {
+	margin: 3.5rem 1rem;
+	background: #ebc985;
+	padding: 1.1rem 2.5rem;
+	font-size: 1.8rem;
+	color: black;
+	margin-bottom: 5rem;
+	border-radius: .5rem;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+.btn-portfolio:hover {
+	background: #fff;
+	box-shadow: 2px -2px 1px .1rem rgba(0,0,0,.5);
+}
+.portfolio-section .little-description{
+    margin-bottom: 0;
+}
+.btn-p-end {
+    border: 0;
+	background: #17c2a4;
+	border-bottom: .5rem solid #14a58c;
+	padding: 2.5rem 2.5rem;
+	transition: .4s;
+	margin-top: 4rem;
+}
+.btn-p-end:hover{
+    background: #eb7d4b;
+    border-bottom: .5rem solid #c86a40;
+}
+.portfolio-section h4 {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+    color: #50452e;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.portfolio-section .mixitup-control-active{
+    background: #fff;
+}
+
+/* ================================= */
+/* Testimonial Section */
+/* ================================= */
+.testimonial{
+    background: linear-gradient(rgba(215,70,128,.9),rgba(215,70,128,.9)),url(img/testimonial-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.testimonial h2{
+    color:#fff;
+}
+.testimonial h2::after{
+    background: #b73c6d;
+}
+.testimonial p{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.testimonial .col:nth-child(3) {
+    margin-left: 0;
+}
+.testimonial q{
+    display: block;
+	text-align: left !important;
+    margin-left: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.testimonial h3{
+    display: block;
+	text-align: left !important;
+    margin-left: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.testimonial .team-subt {
+	display: block;
+	text-align: left !important;
+    margin-left: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.testimonial q {
+	margin-top: .4rem;
+	font-size: 2.1rem;
+	width: 37rem;
+	line-height: 2.9rem;
+	margin-bottom: 2.3rem;
+	color: #fff;
+	font-style: italic;
+}
+.testimonial .client-photo{
+    float: left;
+}
+.testimonial .client-photo img{
+    width: 10rem;
+    border-radius: 50%;
+}
+.testimonial .client-review{
+    float: left;
+}
+.testimonial .client-review h3 {
+	color: #fff;
+	margin-bottom: .5rem;
+}
+.testimonial .client-review span{
+    color: #fcd397;
+    font-size: 1.8rem;
+    width: 100%;
+}
+.testimonial .col:nth-child(3),.testimonial .col:nth-child(4){
+    margin-top: 10rem;
+}
+.client-box {
+	margin-left: 5rem;
+}
+
+/* ================================= */
+/* Contact Section */
+/* ================================= */
+
+.contact-section{
+    background: linear-gradient(rgba(60,84,153,.9),rgba(60,84,153,.9)),url(img/contact-bg.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+    background-attachment: fixed;
+    
+}
+.contact-section h2::after{
+    background: #273a71;
+}
+.contact-section p{
+    color: #fff;
+    width: 100%;
+}
+.contact-section form{
+    width: 70%;
+    margin-left:15%;
+}
+.contact-section input[type="text"],.contact-section input[type="email"],
+.contact-section textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background: #273a71;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1.9rem;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 2.3rem;
+}
+.contact-section input[type="text"],.contact-section input[type="email"]{
+    margin-right: 3%;
+    width: 97%;
+
+}
+.contact-section input[type="email"]{
+    margin-right: 0%;
+}
+.contact-section form ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.btn-submit{
+    background: #30bae7;
+    border:0;
+    border-bottom: .5rem solid #299ec5;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background: #2980b9;
+    border:0;
+    border-bottom: .5rem solid #1b6597;
+}
+
+/* ================================= */
+/* Footer Section */
+/* ================================= */
+
+footer{
+    text-align: center;
+    background: #344b8e;
+    border-top: .1rem solid rgba(255,255,255,.2);
+}
+footer li{
+    display: inline-block;
+}
+footer li a{
+    padding:4rem 3rem;
+    display: block;
+    font-size: 2.4rem;
+    color: #fff;
+    transition: .4s;
+}
+footer li a:hover{
+    color: #30bae7;
+}

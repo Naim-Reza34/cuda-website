@@ -1,0 +1,77 @@
+   /* Sticky Menu */
+@media only screen and (min-width:480px) and (max-width:3000px)
+{
+    .sticky ul {
+        position: absolute;
+        right: -111rem;
+        padding-right: 75rem;
+        text-align: center;
+    }
+    .sticky .logo-title img {
+        background: rgba(135,80,156,.8);
+        left: 63rem;
+        padding-left: 12rem;
+        background: none;
+    }
+}
+
+@media only screen and (max-width:1300px)
+{
+	.container {
+        margin: 0 15px;
+    }
+    .sticky .logo-title img {
+        padding-left: 6rem;
+    }
+    .sticky ul {
+        padding-right: 92rem;
+    }
+}
+@media only screen and (max-width:1103px)
+{
+    .sticky ul {
+        padding-right: 95rem;
+    }
+}
+@media only screen and (max-width:980px)
+{
+    .sticky ul {
+        padding-right: 101rem;
+        font-size: -8rem;
+    }
+}
+@media only screen and (max-width:768px)
+{
+    .sticky .logo-title img {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .sticky ul {
+        padding-right: 110rem;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .sticky .logo-title img {
+        visibility: hidden;
+        opacity: 0;
+        background: none;
+    }
+    .sticky ul {
+        padding-right: 110rem;
+        visibility: hidden;
+
+    }
+}
+
+/* Main Responsive */
+@media only screen and (max-width:1080px)
+{
+    .testimonial .client-photo{
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+  
+  
+}
